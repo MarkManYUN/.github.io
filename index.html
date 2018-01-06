@@ -2,9 +2,37 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>欢迎登录</title>
 <link href="/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="/css/index.css" type="text/css" />
+<link href="/css/index.css" rel="stylesheet">
+<script type="text/javascript" src="/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="/layer/layer.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		var text;
+		$("#input").focus(function() {
+			text = $(this).attr('placeholder');
+			$(this).attr('placeholder', '');
+		});
+		$("#input").blur(function() {
+			$(this).attr('placeholder', text);
+		});
+
+		//弹出一个页面层
+		$('#submit1').on('click', function() {
+			//加载层
+			var index = layer.load(0, {
+				shade : false
+			}); //0代表加载的风格，支持0-2
+
+		});
+	});
+	function changeRandomCode() {
+		document.getElementById("randomCodeImg").src = "${pageContext.request.contextPath}/randomCode?"
+				+ new Date().getTime();
+	}
+</script>
 </head>
 
 <body class="body">
