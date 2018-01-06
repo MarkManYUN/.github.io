@@ -1,0 +1,16 @@
+@CHARSET "UTF-8";
+
+.div_content {
+	font-size: 1.2em;
+	font-family: cursive;
+	background-color: #F2F2F2;
+	border-radius:20px;
+	padding: 2%; 
+}
+
+
+
+
+.div_clear {
+	clear: both;
+}

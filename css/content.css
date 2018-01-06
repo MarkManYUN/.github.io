@@ -1,0 +1,34 @@
+@CHARSET "UTF-8";
+
+dd:HOVER {
+
+	text-decoration:none;
+	background-color: #4E5465;
+}
+a:HOVER{
+	text-decoration:none;
+}
+dd a{
+	text-decoration:none;
+	margin: 2px;
+}
+.body {
+	whidth: 100%;
+	height: 100%;
+}
+
+.div_left {
+	float: left;
+	width: 30%;
+	height: 100%;
+}
+
+.div_right {
+	float: right;
+	width: 60%;
+	height: 100%;
+}
+
+.div_clear {
+	clear: both;
+}

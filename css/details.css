@@ -1,0 +1,10 @@
+@CHARSET "UTF-8";
+.layui-form label{
+	width: 90px !important;
+}
+.layui-form .lead{
+	color: #009688!important;
+}
+.layui-form .layui-input-inline{
+	width: 200px!important;
+}
